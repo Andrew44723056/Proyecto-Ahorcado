@@ -1,0 +1,32 @@
+ #container {
+  margin: 250px auto;
+  width: 550px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  
+
+
+}
+button:hover{
+  color:cadetblue;
+  background-color: black;
+  
+}
+#lolo{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  padding: 40px;
+  
+}
+button{
+  height: 35px;
+  width: 40px;
+}
+.blue{
+  background-color: blue;
+}
+.black{
+  background-color: darkred;
+}

@@ -1,32 +1,35 @@
- #container {
+body {
+  background: #1f4037;
+  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+  background: linear-gradient(to right, #99f2c8, #1f4037);
+}
+
+#container {
   margin: 250px auto;
   width: 550px;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  
-
-
 }
-button:hover{
-  color:cadetblue;
+button:hover {
+  color: cadetblue;
   background-color: black;
-  
 }
-#lolo{
+#lolo {
   display: flex;
   justify-content: space-evenly;
   font-size: 20px;
   padding: 40px;
-  
+  margin: 300px;
+ height: 2px;
 }
-button{
+button {
   height: 35px;
   width: 40px;
 }
-.blue{
+.blue {
   background-color: blue;
 }
-.black{
+.amarrillo {
   background-color: darkred;
 }

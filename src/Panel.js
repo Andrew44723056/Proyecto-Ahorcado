@@ -36,4 +36,4 @@ class Panel {
     console.log(this.vectorAdivinanza);
 }
 }
-export { Panel };
+export {Panel};

@@ -1,15 +1,15 @@
 body {
-  background: #1f4037;
-  background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-  background: linear-gradient(to right, #99f2c8, #1f4037);
+  background-image: url(https://user-images.githubusercontent.com/36126914/154766367-2c3d9c80-3cdc-4790-b15c-7eba5eee9fd2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #container {
-  margin: 250px auto;
-  width: 550px;
+  margin: 70px auto;
+  width: 599px;
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 button:hover {
   color: cadetblue;
@@ -18,10 +18,8 @@ button:hover {
 #lolo {
   display: flex;
   justify-content: space-evenly;
-  font-size: 20px;
-  padding: 40px;
-  margin: 300px;
- height: 2px;
+  font-size: 29px;
+  color:greenyellow;
 }
 button {
   height: 35px;
@@ -30,6 +28,10 @@ button {
 .blue {
   background-color: blue;
 }
-.amarrillo {
+.amarillo {
   background-color: darkred;
+}
+.kuku {
+  width: 280px;
+  height: 260px; 
 }

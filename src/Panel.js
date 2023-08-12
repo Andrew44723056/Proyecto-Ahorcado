@@ -35,5 +35,18 @@ class Panel {
 
     console.log(this.vectorAdivinanza);
 }
+
+showCorrect2(letter, indexs){ 
+  const letraMinuscula = letter.toLowerCase();
+
+  for (let index = indexs; index < this.vectorRespuesta.length; index++) {
+    if (this.vectorRespuesta[index] == letter || this.vectorRespuesta[index] == letraMinuscula) {
+      return true
+    }
+  }
+}
+
+
+
 }
 export {Panel};

@@ -35,3 +35,16 @@ button {
   width: 280px;
   height: 260px; 
 }
+
+
+#Circulo{
+  position:absolute;
+  top: 0 ;
+  right: 0;
+  margin: 40px;
+}
+
+.numero{
+  font-size: 40px;
+  color: white
+}

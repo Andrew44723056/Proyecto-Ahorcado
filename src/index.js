@@ -13,11 +13,14 @@ const palabra = Panels.dibujarLineas();
 
 let conta = 0;
 let conta2 = 1;
+let attemps = 7;
 
 console.log(palabra);
 
 const container = document.querySelector("#container");
 const parts = document.getElementById("lili");
+
+const black = document.getElementById('black');
 
 vector.map((key) => {
   const button = document.createElement("button");
@@ -28,7 +31,7 @@ vector.map((key) => {
     lolo.textContent = "";
 
     const verifica = Panels.showCorrect2(e.target.textContent, conta);
-
+    
     console.log(verifica);
 
     if (verifica) {
@@ -37,6 +40,11 @@ vector.map((key) => {
       button.classList = "amarillo";
       parts.src = Body.nextimage(conta2);
       conta2++;
+      attemps--;
+      black.textContent = attemps
+      if(attemps == 0){
+
+      }
     }
 
     console.log(Panels.showCorrect(e.target.textContent));

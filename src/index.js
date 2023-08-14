@@ -39,8 +39,12 @@ vector.map((key) => {
     } else {
       button.classList = "amarillo";
       parts.src = Body.nextimage(conta2);
-      conta2++;
-      attemps--;
+      if (conta2 < 7){
+        conta2++;
+      }
+      if (attemps > 0) {
+        attemps--;
+      }
       black.textContent = attemps
       if(attemps == 0){
 

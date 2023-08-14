@@ -39,8 +39,8 @@ button {
 
 #Circulo{
   position:absolute;
-  top: 0 ;
-  right: 0;
+  top: -23px ; 
+  right: 581px;
   margin: 40px;
 }
 

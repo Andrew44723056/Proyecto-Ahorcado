@@ -8,11 +8,14 @@ class Result {
       return (this.message = "Victoria");
     } else {
       return (this.message = "Perdiste");
+      alert("Perdiste")
     }
-  }
+  }  
+  
 }
 
 const App = new Result();
 console.log(App.message);
 console.log(App.showResult(true));
 console.log(App.showResult(false));
+export { Result };

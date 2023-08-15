@@ -1,6 +1,6 @@
 class Panel {
   constructor() {
-    this.palabras = ["avion", "javascript", "cocobolo", "australia"];
+    this.palabras = ["avion", "javascript", "cocobolo", "australia", "africa", "jupiter", "luna"];
     this.vectorAdivinanza = [];
     this.palabraElegida = "";
     this.vectorRespuesta = [];

@@ -2,8 +2,8 @@ class Panel {
   constructor() {
     this.palabras = ["avion", "javascript", "cocobolo", "australia"];
     this.vectorAdivinanza = [];
-    this.palabraElegida = '';
-    this.vectorRespuesta = []
+    this.palabraElegida = "";
+    this.vectorRespuesta = [];
   }
 
   dibujarLineas() {
@@ -24,29 +24,28 @@ class Panel {
   }
   showCorrect(letter) {
     const letraMinuscula = letter.toLowerCase();
-    this.vectorRespuesta.map((letra, posicion) =>{
+    this.vectorRespuesta.map((letra, posicion) => {
       if (letra == letter || letra == letraMinuscula) {
-        this.vectorAdivinanza[posicion] = letter
+        this.vectorAdivinanza[posicion] = letter;
       } else {
         console.log("Incorrecta");
       }
-
-    })
+    });
 
     console.log(this.vectorAdivinanza);
-}
+  }
 
-showCorrect2(letter, indexs){ 
-  const letraMinuscula = letter.toLowerCase();
+  showCorrect2(letter, indexs) {
+    const letraMinuscula = letter.toLowerCase();
 
-  for (let index = indexs; index < this.vectorRespuesta.length; index++) {
-    if (this.vectorRespuesta[index] == letter || this.vectorRespuesta[index] == letraMinuscula) {
-      return true
+    for (let index = indexs; index < this.vectorRespuesta.length; index++) {
+      if (
+        this.vectorRespuesta[index] == letter ||
+        this.vectorRespuesta[index] == letraMinuscula
+      ) {
+        return true;
+      }
     }
   }
 }
-
-
-
-}
-export {Panel};
+export { Panel };

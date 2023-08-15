@@ -19,7 +19,7 @@ button:hover {
   display: flex;
   justify-content: space-evenly;
   font-size: 29px;
-  color:greenyellow;
+  color: greenyellow;
 }
 button {
   height: 35px;
@@ -33,18 +33,17 @@ button {
 }
 .kuku {
   width: 280px;
-  height: 260px; 
+  height: 260px;
 }
 
-
-#Circulo{
-  position:absolute;
-  top: -23px ; 
+#Circulo {
+  position: absolute;
+  top: -23px;
   right: 581px;
   margin: 40px;
 }
 
-.numero{
+.numero {
   font-size: 40px;
-  color: white
+  color: white;
 }

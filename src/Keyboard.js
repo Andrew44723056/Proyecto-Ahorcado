@@ -31,7 +31,7 @@ class Keyboard {
     ];
   }
   drawKeyboard() {
-    return this.Keys
+    return this.Keys;
   }
   // showCorrect(letter) {
   //   if (letter == true) {
@@ -42,4 +42,4 @@ class Keyboard {
   // }
 }
 
-export {Keyboard};
+export { Keyboard };

@@ -14,6 +14,5 @@ class BodyParts {
   nextimage(num) {
     return this.array_img[num];
   }
-  
 }
 export { BodyParts };

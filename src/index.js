@@ -20,34 +20,38 @@ console.log(palabra);
 const container = document.querySelector("#container");
 const parts = document.getElementById("lili");
 
-const black = document.getElementById('black');
+const black = document.getElementById("black");
 
 vector.map((key) => {
   const button = document.createElement("button");
   button.textContent = key;
   button.addEventListener("click", (e) => {
-
     const h1 = document.querySelectorAll("#lolo h1");
     lolo.textContent = "";
 
     const verifica = Panels.showCorrect2(e.target.textContent, conta);
-    
+
     console.log(verifica);
 
     if (verifica) {
       button.classList = "blue";
-    } else {
+    } 
+     else {
       button.classList = "amarillo";
       parts.src = Body.nextimage(conta2);
-      if (conta2 < 7){
+      
+      if (conta2 < 7) {
         conta2++;
       }
+
       if (attemps > 0) {
         attemps--;
+        
       }
-      black.textContent = attemps
-      if(attemps == 0){
-
+      
+      black.textContent = attemps;
+      if (attemps == 0){
+        parts.src = Body.nextimage(6);
       }
     }
 

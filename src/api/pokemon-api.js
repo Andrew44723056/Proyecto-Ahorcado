@@ -1,0 +1,7 @@
+class pokemon{
+    
+}
+
+
+
+export { pokemon };   

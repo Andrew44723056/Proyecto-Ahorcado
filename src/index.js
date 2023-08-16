@@ -1,8 +1,8 @@
-import { Keyboard } from "./Keyboard.js";
-import { BodyParts } from "./BodyParts.js";
-import { Panel } from "./Panel.js";
-import { Result } from "./ResultClass.js";
-
+import { Keyboard } from "./components/Keyboard.js";
+import { BodyParts } from "./components/BodyParts.js";
+import { Panel } from "./components/Panel.js";
+import { Result } from "./components/ResultClass.js";
+import { pokemon } from "./api/pokemon-api.js";
 const App = new Keyboard();
 
 const Panels = new Panel();

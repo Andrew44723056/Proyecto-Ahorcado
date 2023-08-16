@@ -14,13 +14,9 @@ const ResultClass = new Result();
 const vector = App.drawKeyboard();
 const palabra = Panels.dibujarLineas();
 
-
 let conta = 0;
 let conta2 = 1;
 let attemps = 6;
-
-
-console.log(palabra);
 
 const container = document.querySelector("#container");
 const parts = document.getElementById("lili");
@@ -29,41 +25,39 @@ const black = document.getElementById("black");
 
 vector.map((key) => {
   const button = document.createElement("button");
+
   button.textContent = key;
   button.addEventListener("click", (e) => {
-    
     const h1 = document.querySelectorAll("#lolo h1");
     lolo.textContent = "";
-    
+
     const verifica = Panels.showCorrect2(e.target.textContent, conta);
-    
-    const valida = ResultClass.showResult (verifica);
-    if (valida){
-      // ResultClass.showResult = 
-      alert("Victoria");
-    }
+
+    const valida = ResultClass.showResult(verifica);
+    const ganaste = Panels.showifisWin();
+
     console.log(verifica);
 
     if (verifica) {
       button.classList = "blue";
       
-    } 
-     else {
+    } else {
       button.classList = "amarillo";
       parts.src = Body.nextimage(conta2);
-      
+
       if (conta2 < 7) {
         conta2++;
       }
 
       if (attemps > 0) {
         attemps--;
-        
       }
-      
+
       black.textContent = attemps;
-      if (attemps == 0){
+      if (attemps == 0) {
         parts.src = Body.nextimage(6);
+        alert("Perdiste");
+  
       }
     }
 
@@ -81,15 +75,14 @@ vector.map((key) => {
 
       lolo.appendChild(h1);
     });
+    if(ganaste){
+      alert('Ganaste')
+    }
   });
+
 
   container.appendChild(button);
 });
-
-// document.addEventListener("DOMcontentLoaded", () => {
-//   const board = new Keyboard();
-//   board.drawKeyboard();
-// });
 
 palabra.map((vectorAdivinanza) => {
   const h1 = document.createElement("h1");

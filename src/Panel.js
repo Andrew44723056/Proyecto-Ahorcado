@@ -29,6 +29,7 @@ class Panel {
         this.vectorAdivinanza[posicion] = letter;
       } else {
         console.log("Incorrecta");
+      
       }
     });
 
@@ -37,7 +38,7 @@ class Panel {
 
   showCorrect2(letter, indexs) {
     const letraMinuscula = letter.toLowerCase();
-
+    console.log(letter,indexs, this.vectorRespuesta);
     for (let index = indexs; index < this.vectorRespuesta.length; index++) {
       if (
         this.vectorRespuesta[index] == letter ||
@@ -45,6 +46,16 @@ class Panel {
       ) {
         return true;
       }
+    }
+  }
+
+  showifisWin() {
+    let variable = JSON.stringify(this.vectorAdivinanza) === JSON.stringify(this.vectorRespuesta);
+    //PALABRA ELEGIDA == VECTOR DE RESPUESTA
+    if (variable === true) {
+      return true;
+    } else {
+      return false;
     }
   }
 }

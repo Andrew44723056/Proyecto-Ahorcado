@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://user-images.githubusercontent.com/36126914/154766367-2c3d9c80-3cdc-4790-b15c-7eba5eee9fd2.gif);
+  background-image: url(../images/8094982.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -46,4 +46,8 @@ button {
 .numero {
   font-size: 40px;
   color: white;
+}
+#imgpokemon{
+width: 200px;
+
 }

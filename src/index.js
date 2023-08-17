@@ -2,7 +2,23 @@ import { Keyboard } from "./components/Keyboard.js";
 import { BodyParts } from "./components/BodyParts.js";
 import { Panel } from "./components/Panel.js";
 import { Result } from "./components/ResultClass.js";
-import { pokemon } from "./api/pokemon-api.js";
+import { Pokemon } from "./api/pokemon-api.js";
+
+const parts = document.getElementById("imgpokemon");
+// const dataPokemon = document.getElementById("impokemon");
+
+
+async function getP() {
+  const pokemon = new Pokemon();
+  const dataPokemon = await pokemon.getPokemons();
+  console.log(dataPokemon.sprites.other['official-artwork']['front_default']);
+  // const img = document.createElement('img')
+  parts.src = dataPokemon.sprites.other['official-artwork']['front_default']
+
+  console.log(Panels.dibujarPokemon(dataPokemon.name));
+}
+getP();
+
 const App = new Keyboard();
 
 const Panels = new Panel();
@@ -19,7 +35,6 @@ let conta2 = 1;
 let attemps = 6;
 
 const container = document.querySelector("#container");
-const parts = document.getElementById("lili");
 
 const black = document.getElementById("black");
 
@@ -40,7 +55,6 @@ vector.map((key) => {
 
     if (verifica) {
       button.classList = "blue";
-      
     } else {
       button.classList = "amarillo";
       parts.src = Body.nextimage(conta2);
@@ -57,7 +71,6 @@ vector.map((key) => {
       if (attemps == 0) {
         parts.src = Body.nextimage(6);
         alert("Perdiste");
-  
       }
     }
 
@@ -75,11 +88,10 @@ vector.map((key) => {
 
       lolo.appendChild(h1);
     });
-    if(ganaste){
-      alert('Ganaste')
+    if (ganaste) {
+      alert("Ganaste");
     }
   });
-
 
   container.appendChild(button);
 });

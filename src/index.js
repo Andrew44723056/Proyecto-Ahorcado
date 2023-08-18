@@ -20,8 +20,29 @@ let attemps = 6;
 
 const container = document.querySelector("#container");
 const black = document.getElementById("black");
-
 const vector = App.drawKeyboard();
+
+// const pistas = document.getElementById("demo");
+
+// const pistas = document.querySelector('.button');
+ 
+//  pistas.addEventListener('click', function() {
+//     const imgpokemon = document.getElementById('Pokemon');
+//     imgpokemon.classList='Pokemon';
+
+// let time = 5;
+// function actualizarPokemos(){
+//     demo.textContent = time ;
+//     if(time <= 0){
+//         clearInterval(interval);
+//         imgpokemon.classList = 'Pokemon'
+//         demo.style.display = 'none'
+//     }
+//     time--;
+// }
+//  }
+
+
 
 async function getP() {
   const pokemon = new Pokemon();

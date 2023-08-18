@@ -1,3 +1,4 @@
+
 class Panel {
   constructor() {
     this.palabras = [
@@ -15,7 +16,8 @@ class Panel {
   }
 
   dibujarPokemon(nombre) {
-    return (this.vectorRespuesta = Array.from(nombre));
+   return this.vectorRespuesta = Array.from(nombre);
+
   }
 
   dibujarLineas() {
@@ -29,11 +31,11 @@ class Panel {
 
     // this.vectorRespuesta = Array.from(nombre);
     for (let index = 0; index < this.vectorRespuesta.length; index++) {
-      this.vectorRespuesta.push("_");
+      this.vectorAdivinanza.push("_");
     }
     return this.vectorAdivinanza;
   }
-  //
+  
   // dibujarLineasModificar() {
   //   let idpalabra = 0;
 

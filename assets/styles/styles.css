@@ -1,11 +1,11 @@
 body {
-  background-image: url(../images/8094982.gif);
-  background-repeat: no-repeat;
+  background-image: url(../images/8094964.gif);
+  /* background-repeat: no-repeat; */
   background-size: cover;
 }
 
 #container {
-  margin: 70px auto;
+  margin: 0px auto;
   width: 599px;
   flex-wrap: wrap;
   display: flex;
@@ -18,8 +18,8 @@ button:hover {
 #lolo {
   display: flex;
   justify-content: space-evenly;
-  font-size: 29px;
-  color: greenyellow;
+  font-size: 23px;
+  color:purple;
 }
 button {
   height: 35px;
@@ -32,8 +32,8 @@ button {
   background-color: darkred;
 }
 .kuku {
-  width: 280px;
-  height: 260px;
+  width: 290px;
+  height: 210px;
 }
 
 #Circulo {
@@ -48,6 +48,16 @@ button {
   color: white;
 }
 #imgpokemon{
-width: 200px;
+width: 124px;
+filter: brightness(10000%);
+
+}
+.pistas{
+  /* display: flex; */
+  width: 65px;
+  /* height: 28px; */
+  align-items: center;
+  /* mix-blend-mode: darken; */
+  border-bottom-style: groove;
 
 }

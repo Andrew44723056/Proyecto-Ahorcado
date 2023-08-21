@@ -31,7 +31,7 @@ button {
 .amarillo {
   background-color: darkred;
 }
-.kuku {
+.css{
   width: 290px;
   height: 210px;
 }
@@ -47,11 +47,17 @@ button {
   font-size: 40px;
   color: white;
 }
-#imgpokemon{
+.imgpokemon{
 width: 124px;
 filter: brightness(10000%);
 
 }
+
+.muestraPokemon{
+  width: 124px;
+  filter: brightness(1);
+}
+
 .pistas{
   /* display: flex; */
   width: 65px;
